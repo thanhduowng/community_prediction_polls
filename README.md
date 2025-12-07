@@ -7,6 +7,8 @@ A decentralized Yes/No prediction polling system built on IOTA blockchain using 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+**🚀 Testnet Contract Address:** `0x5bda150155a873838a6dae69a812515bb34299c881bfffe429768c42988f457f`
+
 ## 📋 Overview
 
 **Community Prediction Polls** allows users to create and vote on Yes/No predictions. Each poll tracks voting statistics and ensures fair voting (one vote per address, creator cannot vote on their own poll).
