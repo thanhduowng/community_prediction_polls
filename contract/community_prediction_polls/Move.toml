@@ -1,0 +1,11 @@
+[package]
+name = "community_prediction_polls"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+Iota = { git = "https://github.com/iotaledger/iota.git", subdir = "crates/iota-framework/packages/iota-framework", rev = "devnet" }
+
+[addresses]
+community_prediction_polls = "0x0"
+
