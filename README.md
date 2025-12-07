@@ -201,11 +201,24 @@ npm run generate-prompt  # Generate AI prompt
 
 ## 🌐 Network Configuration
 
+### Deployed Contracts
+
+| Network | Package ID | Status |
+|---------|------------|--------|
+| **Testnet** | `0x5bda150155a873838a6dae69a812515bb34299c881bfffe429768c42988f457f` | ✅ Active |
+| **Devnet** | Not deployed | - |
+| **Mainnet** | Not deployed | - |
+
+**Testnet Deployment Details:**
+- Transaction: `79XCBdmn59qLT6hcreh46mpaJrhLCCBCoLD4ohkVbiCd`
+- Explorer: [View on Explorer](https://explorer.iota.org/txblock/79XCBdmn59qLT6hcreh46mpaJrhLCCBCoLD4ohkVbiCd?network=testnet)
+- Deployed: December 7, 2025
+
 Edit `lib/config.ts` to configure package IDs:
 
 ```typescript
+export const TESTNET_PACKAGE_ID = "0x5bda150155a873838a6dae69a812515bb34299c881bfffe429768c42988f457f"
 export const DEVNET_PACKAGE_ID = "0x..."
-export const TESTNET_PACKAGE_ID = "0x..."
 export const MAINNET_PACKAGE_ID = "0x..."
 ```
 
@@ -217,7 +230,7 @@ export const MAINNET_PACKAGE_ID = "0x..."
 
 ```bash
 iota client call \
-  --package <PACKAGE_ID> \
+  --package 0x5bda150155a873838a6dae69a812515bb34299c881bfffe429768c42988f457f \
   --module contract \
   --function create_poll \
   --args "Will BTC reach 100k?" "Bitcoin price prediction" \
@@ -228,7 +241,7 @@ iota client call \
 
 ```bash
 iota client call \
-  --package <PACKAGE_ID> \
+  --package 0x5bda150155a873838a6dae69a812515bb34299c881bfffe429768c42988f457f \
   --module contract \
   --function vote \
   --args <POLL_ID> 0 \
@@ -239,7 +252,7 @@ iota client call \
 
 ```bash
 iota client call \
-  --package <PACKAGE_ID> \
+  --package 0x5bda150155a873838a6dae69a812515bb34299c881bfffe429768c42988f457f \
   --module contract \
   --function vote \
   --args <POLL_ID> 1 \
